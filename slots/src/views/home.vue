@@ -1,9 +1,7 @@
 <template>
   <div>
-    <DefaultSlot>
-      <template v-slot:default="{ user }">
-        {{ user.firstName }}
-      </template>
+    <DefaultSlot v-slot="{ user }">
+      {{ user.firstName }}
     </DefaultSlot>
   </div>
 </template>
